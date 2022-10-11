@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //jsonArray
+        var students=[
+            {
+                "id":"15503",
+                "name":"Sravani",
+                "Qualification":"B.Tech",
+                "branch":"Computer Science"
+             } ,
+             {
+                "id":"15520",
+                "name":"Vidya",
+                "Qualification":"B.Tech",
+                "branch":"Computer Science"
+             } ,
+             {
+                "id":"15525",
+                "name":"Rachana",
+                "Qualification":"B.Tech",
+                "branch":"Computer Science"
+             }
+          ]
+
+        //for loop
+        for(var i=0;i<students.length;i++)
+        {
+            console.log(students[i].id , students[i].name ,students[i].Qualification , students[i].branch)
+        }
+
+        //for of
+        for(let student of students)
+        {
+            console.log(student.id , student.name ,student.Qualification , student.branch)   
+        }
+
+        //for in
+        for(let index in students)
+        {
+            console.log(students[index].id , students[index].name ,students[index].Qualification , students[index].branch)
+        }
+
+        //for each
+        students.forEach(student => {
+            console.log(student.id , student.name ,student.Qualification , student.branch)   
+        });
+    </script>
+
+</body>
+</html>
